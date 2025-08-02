@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Muhammad Anugrah Perdana</title>
+    <meta name="description" content="Portfolio profesional Muhammad Anugrah Perdana - Web Developer, Software Engineer">
+    <meta name="keywords" content="portfolio, web developer, software engineer, programmer">
+    <meta name="author" content="Muhammad Anugrah Perdana">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Portfolio - Muhammad Anugrah Perdana">
+    <meta property="og:description" content="Portfolio profesional Muhammad Anugrah Perdana - Web Developer, Software Engineer">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="./assets/images/profile.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./favicon.png">
+    <link rel="apple-touch-icon" href="./favicon.png">
+    
+    <!-- Manifest -->
+    <link rel="manifest" href="./manifest.json">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Theme Toggle Button -->
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+        <i class="fas fa-moon"></i>
+    </button>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">MAP</a>
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <a href="#home" class="nav-link active">Beranda</a>
+                <a href="#about" class="nav-link">Tentang</a>
+                <a href="#skills" class="nav-link">Keahlian</a>
+                <a href="#projects" class="nav-link">Proyek</a>
+                <a href="#certificates" class="nav-link">Sertifikat</a>
+                <a href="#gallery" class="nav-link">Galeri</a>
+                <a href="#contact" class="nav-link">Kontak</a>
+            </div>
+            <div class="nav-toggle" id="navToggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content" data-aos="fade-up">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        Halo, Saya <span class="text-gradient">Muhammad Anugrah Perdana</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        Mahasiswa Manajemen dengan pengalaman dalam administrasi organisasi, pembuatan konten digital, dan program pemberdayaan masyarakat
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-primary">Hubungi Saya</a>
+                        <a href="#projects" class="btn btn-secondary">Lihat Proyek</a>
+                    </div>
+                </div>
+                <div class="hero-image" data-aos="fade-left" data-aos-delay="200">
+                    <div class="image-container">
+                        <img src="./assets/images/profile.jpg" alt="Muhammad Anugrah Perdana" class="profile-img">
+                        <div class="image-bg"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-scroll" data-aos="fade-up" data-aos-delay="400">
+                <a href="#about" class="scroll-link">
+                    <span>Scroll untuk melihat lebih</span>
+                    <i class="fas fa-arrow-down"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Tentang Saya</h2>
+                <p class="section-subtitle">Mengenal lebih dekat tentang perjalanan dan passion saya</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text" data-aos="fade-right">
+                    <div class="about-info">
+                        <h3>Mahasiswa Manajemen & Content Creator</h3>
+                        <p>
+                            Saya adalah mahasiswa Manajemen di Universitas Muhammadiyah Sumatera Utara dengan IPK 3,72/4,00. 
+                            Memiliki pengalaman dalam administrasi organisasi, pembuatan konten digital, dan program pemberdayaan masyarakat.
+                        </p>
+                        <p>
+                            Berpengalaman sebagai Digital Content Creation Intern di PT. Telekomunikasi Selular (Telkomsel), 
+                            di mana saya membuat dan mengoptimalkan konten digital untuk platform media sosial serta berkolaborasi 
+                            dengan tim kreatif dan marketing untuk kampanye promosi produk.
+                        </p>
+                    </div>
+                    <div class="about-details">
+                        <div class="detail-item">
+                            <span class="detail-label">Nama:</span>
+                            <span class="detail-value">Muhammad Anugrah Perdana</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Email:</span>
+                            <span class="detail-value">danaperdana2552@gmail.com</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Lokasi:</span>
+                            <span class="detail-value">Medan, Indonesia</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Status:</span>
+                            <span class="detail-value">Mahasiswa Aktif</span>
+                        </div>
+                    </div>
+                    <div class="about-actions">
+                        <a href="./assets/documents/CV-Muhammad-Anugrah-Perdana.pdf" class="btn btn-primary" target="_blank">
+                            <i class="fas fa-download"></i> Download CV
+                        </a>
+                    </div>
+                </div>
+                <div class="about-stats" data-aos="fade-left" data-aos-delay="200">
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="15">0</div>
+                        <div class="stat-label">Proyek Organisasi</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="3">0</div>
+                        <div class="stat-label">Tahun Pengalaman</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="8">0</div>
+                        <div class="stat-label">Posisi Organisasi</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="372">0</div>
+                        <div class="stat-label">IPK x100</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Keahlian</h2>
+                <p class="section-subtitle">Teknologi dan tools yang saya kuasai</p>
+            </div>
+            <div class="skills-content">
+                <div class="skills-categories">
+                    <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
+                        <div class="category-header">
+                            <i class="fas fa-palette"></i>
+                            <h3>Design & Content Creation</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Adobe Photoshop</span>
+                                    <span class="skill-percentage">90%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Adobe Illustrator</span>
+                                    <span class="skill-percentage">85%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="85%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">CorelDRAW</span>
+                                    <span class="skill-percentage">88%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="88%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Canva</span>
+                                    <span class="skill-percentage">95%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="95%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
+                        <div class="category-header">
+                            <i class="fas fa-video"></i>
+                            <h3>Video & Content Marketing</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Adobe Premiere</span>
+                                    <span class="skill-percentage">85%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="85%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">CapCut</span>
+                                    <span class="skill-percentage">90%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Copywriting</span>
+                                    <span class="skill-percentage">88%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="88%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Content Marketing</span>
+                                    <span class="skill-percentage">85%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="85%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category" data-aos="fade-up" data-aos-delay="300">
+                        <div class="category-header">
+                            <i class="fas fa-tools"></i>
+                            <h3>Office & Digital Tools</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Microsoft Office</span>
+                                    <span class="skill-percentage">95%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="95%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Google Workspace</span>
+                                    <span class="skill-percentage">90%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Facebook Ads</span>
+                                    <span class="skill-percentage">80%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="80%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Social Media Management</span>
+                                    <span class="skill-percentage">88%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="88%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Proyek Terbaru</h2>
+                <p class="section-subtitle">Beberapa proyek yang telah saya kerjakan</p>
+            </div>
+            <div class="projects-filter" data-aos="fade-up" data-aos-delay="100">
+                <button class="filter-btn active" data-filter="all">Semua</button>
+                <button class="filter-btn" data-filter="content">Content Creation</button>
+                <button class="filter-btn" data-filter="organization">Organisasi</button>
+                <button class="filter-btn" data-filter="design">Design</button>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card" data-aos="fade-up" data-aos-delay="100" data-category="content">
+                    <div class="project-image">
+                        <img src="./assets/images/projects/project-1.jpg" alt="Telkomsel Content Creation">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="Live Demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="project-link" title="Portfolio">
+                                    <i class="fas fa-folder"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Digital Content Creation - Telkomsel</h3>
+                        <p class="project-description">Membuat dan mengoptimalkan konten digital untuk platform media sosial Telkomsel serta berkolaborasi dengan tim kreatif dan marketing</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Content Marketing</span>
+                            <span class="tech-tag">Social Media</span>
+                            <span class="tech-tag">Adobe Creative</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-aos="fade-up" data-aos-delay="200" data-category="organization">
+                    <div class="project-image">
+                        <img src="./assets/images/projects/project-2.jpg" alt="Sekretaris Bidang Sosial IMM">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="Detail">
+                                    <i class="fas fa-info-circle"></i>
+                                </a>
+                                <a href="#" class="project-link" title="Dokumentasi">
+                                    <i class="fas fa-images"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Sekretaris Bidang Sosial - IMM</h3>
+                        <p class="project-description">Berkoordinasi dengan mitra eksternal untuk menyusun agenda pemberdayaan masyarakat dan mengelola administrasi divisi</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Administrasi</span>
+                            <span class="tech-tag">Koordinasi</span>
+                            <span class="tech-tag">Pemberdayaan</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-aos="fade-up" data-aos-delay="300" data-category="organization">
+                    <div class="project-image">
+                        <img src="./assets/images/projects/project-3.jpg" alt="Ketua Panitia Bakti Sosial">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="Detail">
+                                    <i class="fas fa-info-circle"></i>
+                                </a>
+                                <a href="#" class="project-link" title="Dokumentasi">
+                                    <i class="fas fa-images"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Ketua Panitia Bakti Sosial - IMM</h3>
+                        <p class="project-description">Memimpin perencanaan, koordinasi, dan pelaksanaan kegiatan bakti sosial serta mengelola tim kepanitiaan</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Leadership</span>
+                            <span class="tech-tag">Event Management</span>
+                            <span class="tech-tag">Team Coordination</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-aos="fade-up" data-aos-delay="100" data-category="design">
+                    <div class="project-image">
+                        <img src="./assets/images/projects/project-4.jpg" alt="Media dan Komunikasi LCV">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="Portfolio">
+                                    <i class="fas fa-folder"></i>
+                                </a>
+                                <a href="#" class="project-link" title="Social Media">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Media & Komunikasi - LCV</h3>
+                        <p class="project-description">Mengelola konten media sosial LCV untuk promosi program bahasa dan merancang desain poster, infografis, dan video pendek edukatif</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Graphic Design</span>
+                            <span class="tech-tag">Social Media</span>
+                            <span class="tech-tag">Video Editing</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-aos="fade-up" data-aos-delay="200" data-category="organization">
+                    <div class="project-image">
+                        <img src="./assets/images/projects/project-5.jpg" alt="Ketua Panitia Musyawarah Komisariat">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="Detail">
+                                    <i class="fas fa-info-circle"></i>
+                                </a>
+                                <a href="#" class="project-link" title="Dokumentasi">
+                                    <i class="fas fa-images"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Ketua Panitia Musyawarah Komisariat - IMM</h3>
+                        <p class="project-description">Bertanggung jawab atas seluruh rangkaian acara Musyawarah Komisariat dan mengkoordinasikan berbagai divisi kepanitiaan</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Event Planning</span>
+                            <span class="tech-tag">Leadership</span>
+                            <span class="tech-tag">Coordination</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-aos="fade-up" data-aos-delay="300" data-category="organization">
+                    <div class="project-image">
+                        <img src="./assets/images/projects/project-6.jpg" alt="Sekretaris Studio Foto OPRH">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="Detail">
+                                    <i class="fas fa-info-circle"></i>
+                                </a>
+                                <a href="#" class="project-link" title="Portfolio">
+                                    <i class="fas fa-camera"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Sekretaris Studio Foto - OPRH</h3>
+                        <p class="project-description">Mengelola inventaris alat foto, pemeliharaan rutin, dan mengatur jadwal sesi pemotretan serta administrasi studio</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Photography</span>
+                            <span class="tech-tag">Administration</span>
+                            <span class="tech-tag">Inventory Management</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section id="certificates" class="certificates">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Sertifikat</h2>
+                <p class="section-subtitle">Sertifikat dan pencapaian yang telah diraih</p>
+            </div>
+            <div class="certificates-grid">
+                <!-- Certificate items will be dynamically loaded -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Galeri</h2>
+                <p class="section-subtitle">Dokumentasi kegiatan dan momen berkesan</p>
+            </div>
+            <div class="gallery-grid">
+                <!-- Gallery items will be dynamically loaded -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Hubungi Saya</h2>
+                <p class="section-subtitle">Mari berkolaborasi dan wujudkan ide-ide hebat bersama</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info" data-aos="fade-right">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <p>danaperdana2552@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Telepon</h3>
+                            <p>08116040222</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Lokasi</h3>
+                            <p>Medan, Indonesia</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/anugrah-perdana" class="social-link" title="LinkedIn" target="_blank">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://bit.ly/PortofolioAnugrahPerdana" class="social-link" title="Portfolio" target="_blank">
+                            <i class="fas fa-folder"></i>
+                        </a>
+                        <a href="#" class="social-link" title="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-link" title="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-form" data-aos="fade-left" data-aos-delay="200">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Nama Lengkap" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder="Subjek" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Pesan" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <i class="fas fa-paper-plane"></i>
+                            Kirim Pesan
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>&copy; 2024 Muhammad Anugrah Perdana. All rights reserved.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#home">Beranda</a>
+                    <a href="#about">Tentang</a>
+                    <a href="#projects">Proyek</a>
+                    <a href="#contact">Kontak</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
+
