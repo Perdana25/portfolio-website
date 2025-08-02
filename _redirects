@@ -1,0 +1,26 @@
+# Redirect rules for Netlify
+
+# Section redirects
+/home              /#home              301
+/about             /#about             301
+/skills            /#skills            301
+/projects          /#projects          301
+/certificates      /#certificates      301
+/gallery           /#gallery           301
+/contact           /#contact           301
+
+# Legacy URLs (if migrating from old site)
+/portfolio         /#projects          301
+/work              /#projects          301
+/resume            /assets/documents/CV-Muhammad-Anugrah-Perdana.pdf  301
+/cv                /assets/documents/CV-Muhammad-Anugrah-Perdana.pdf  301
+
+# API endpoints (if using Netlify Functions)
+/api/*             /.netlify/functions/:splat  200
+
+# Force HTTPS
+http://portfolio-muhammad-anugrah.netlify.app/*  https://portfolio-muhammad-anugrah.netlify.app/:splat  301!
+
+# SPA fallback - must be last
+/*                 /index.html         200
+

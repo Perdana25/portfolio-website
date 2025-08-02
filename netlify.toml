@@ -1,0 +1,136 @@
+[build]
+  # Build command (not needed for static site)
+  command = ""
+  
+  # Directory to publish
+  publish = "."
+  
+  # Functions directory (if using Netlify Functions)
+  functions = "netlify/functions"
+
+[build.environment]
+  # Environment variables for build
+  NODE_VERSION = "18"
+
+# Headers for security and performance
+[[headers]]
+  for = "/*"
+  [headers.values]
+    # Security headers
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    
+    # Performance headers
+    Cache-Control = "public, max-age=31536000"
+    
+    # CORS headers (if needed)
+    Access-Control-Allow-Origin = "*"
+
+# Cache static assets
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# Cache images
+[[headers]]
+  for = "*.jpg"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "*.png"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "*.webp"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# Cache CSS and JS
+[[headers]]
+  for = "*.css"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "*.js"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# HTML files - shorter cache
+[[headers]]
+  for = "*.html"
+  [headers.values]
+    Cache-Control = "public, max-age=3600"
+
+# Redirects and rewrites
+[[redirects]]
+  from = "/home"
+  to = "/#home"
+  status = 301
+
+[[redirects]]
+  from = "/about"
+  to = "/#about"
+  status = 301
+
+[[redirects]]
+  from = "/projects"
+  to = "/#projects"
+  status = 301
+
+[[redirects]]
+  from = "/contact"
+  to = "/#contact"
+  status = 301
+
+# 404 page
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# Form handling (if using Netlify Forms)
+[build.processing]
+  skip_processing = false
+
+[build.processing.css]
+  bundle = true
+  minify = true
+
+[build.processing.js]
+  bundle = true
+  minify = true
+
+[build.processing.html]
+  pretty_urls = true
+
+[build.processing.images]
+  compress = true
+
+# Plugin configuration
+[[plugins]]
+  package = "netlify-plugin-minify-html"
+  
+  [plugins.inputs]
+    contexts = ["production"]
+
+# Context-specific settings
+[context.production]
+  command = ""
+  
+[context.deploy-preview]
+  command = ""
+  
+[context.branch-deploy]
+  command = ""
+
+# Edge functions (if needed)
+# [[edge_functions]]
+#   function = "hello"
+#   path = "/api/hello"
+
